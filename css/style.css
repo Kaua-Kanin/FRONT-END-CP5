@@ -50,3 +50,24 @@ p { color: var(--muted); font-size: 0.95rem; }
 .btn--outline { background: transparent; color: #fff; }
 .btn--sm { padding: 8px 16px; font-size: 0.75rem; }
 .btn--block { width: 100%; }
+
+/* ===== Header ===== */
+.header { position: sticky; top: 0; z-index: 10; background: rgba(11, 11, 13, .85); backdrop-filter: blur(8px); }
+.header__inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
+.logo { font-weight: 800; font-size: 1.15rem; letter-spacing: -0.02em; }
+.nav { display: flex; align-items: center; gap: 24px; font-size: 0.8rem; color: var(--muted); }
+.nav a:not(.btn):hover { color: #fff; }
+
+/* ===== Hero ===== */
+.hero {
+  text-align: center;
+  padding: 56px 0 160px;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% 100%, rgba(255, 140, 30, .55), rgba(255, 90, 30, .12) 45%, transparent 70%),
+    var(--bg);
+  border-bottom-left-radius: 50% 60px;
+  border-bottom-right-radius: 50% 60px;
+}
+.hero__wave { width: min(260px, 60%); margin: 0 auto 28px; }
+.hero__sub { font-size: clamp(1.1rem, 2.4vw, 1.5rem); color: #c9c9ce; margin: 14px 0 32px; }
+.actions { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
